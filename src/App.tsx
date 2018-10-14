@@ -32,6 +32,10 @@ class App extends React.Component {
                     </Collapsible>
                     <Collapsible trigger="Random" classParentString="layout_controls" transitionTime={150}>
                         <div>Highlight on click</div>
+                        <div>Print</div>
+                        <div>PDF</div>
+                        <div>Word</div>
+                        <div>HTML</div>
                     </Collapsible>
                 </div>
                 <div className="page_container">
