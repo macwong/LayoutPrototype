@@ -88,6 +88,13 @@
         height: calc(100% - 4cm - 6px);
     }
 
+    .layout_drag {
+        display: inline-block;
+        user-select: none;
+        padding:5px;
+        border: solid 1px black;
+    }
+
   @media print {
     .page_container, .page_A4 {
       margin: 0;
