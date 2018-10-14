@@ -6,7 +6,7 @@ class App extends React.Component {
   public render() {
     return (
         <div className="report_designer">
-            <Collapsible trigger="Controls" classParentString="layout_controls">
+            <Collapsible trigger="Controls" classParentString="layout_controls" transitionTime={150}>
                 <div>Text</div>
                 <div>Markdown</div>
                 <div>Image</div>

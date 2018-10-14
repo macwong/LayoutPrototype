@@ -24,12 +24,12 @@
     float: right;
     display: block;
     transform: rotate(0);
-    transition: 300ms linear;
+    transition: 150ms linear;
   } 
 
   .layout_controls .layout_controls__trigger.is-open:after {
     transform: rotate(-90deg);
-    transition: 300ms linear;
+    transition: 150ms linear;
   }
   
   .layout_controls .layout_controls__contentInner {
