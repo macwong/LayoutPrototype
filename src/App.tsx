@@ -5,12 +5,15 @@ import './App.css';
 class App extends React.Component {
   public render() {
     return (
-        <div>
+        <div className="report_designer">
             <Collapsible trigger="Controls" classParentString="layout_controls">
                 <div>Text</div>
                 <div>Markdown</div>
                 <div>Image</div>
             </Collapsible>
+            <div className="page_container">
+                <div className="page_A4">Test1</div>
+            </div>
         </div>
     );
   }

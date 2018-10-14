@@ -1,9 +1,13 @@
+/* Menu */
 .layout_controls {
     background-color: #1168b3;
     color: white;
     font-family: verdana;
     width: 250px;
     height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
   .layout_controls .layout_controls__trigger {
@@ -36,6 +40,35 @@
   
   .layout_controls .layout_controls__contentInner div {
     padding: 5px;
+  }
+
+  /* Page */
+
+  .page_container {
+    background: rgb(204,204,204);
+    position: fixed;
+    overflow: auto;
+    left: 250px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+  .page_container .page_A4 {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+
+  @media print {
+    .page_container, .page_A4 {
+      margin: 0;
+      box-shadow: 0;
+    }
   }
 
   @font-face {
