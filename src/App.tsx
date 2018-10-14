@@ -24,6 +24,15 @@ class App extends React.Component {
                         <div>Snap Align</div>
                         <div>Copy</div>
                     </Collapsible>
+                    <Collapsible trigger="Properties" classParentString="layout_controls" transitionTime={150}>
+                        <div>Left</div>
+                        <div>Top</div>
+                        <div>Width</div>
+                        <div>Height</div>
+                    </Collapsible>
+                    <Collapsible trigger="Random" classParentString="layout_controls" transitionTime={150}>
+                        <div>Highlight on click</div>
+                    </Collapsible>
                 </div>
                 <div className="page_container">
                     <div className="page_A4">
