@@ -13,11 +13,18 @@ class App extends React.Component {
     public render() {
         return (
             <div className="report_designer">
-                <Collapsible trigger="Controls" classParentString="layout_controls" transitionTime={150}>
-                    <div>Text</div>
-                    <div>Markdown</div>
-                    <div>Image</div>
-                </Collapsible>
+                <div className="layout_menu">
+                    <Collapsible trigger="Controls" classParentString="layout_controls" transitionTime={150}>
+                        <div>Text</div>
+                        <div>Markdown</div>
+                        <div>Image</div>
+                    </Collapsible>
+                    <Collapsible trigger="Options" classParentString="layout_controls" transitionTime={150}>
+                        <div>Snap to Grid</div>
+                        <div>Snap Align</div>
+                        <div>Copy</div>
+                    </Collapsible>
+                </div>
                 <div className="page_container">
                     <div className="page_A4">
                         <div className="page_margin">
@@ -36,13 +43,8 @@ class App extends React.Component {
     public componentDidMount() {
         interact('.layout_drag')
             .draggable({
-                onmove: this.dragMoveListener,
-                // snap: {
-                // targets: [
-                //     { x: 100, y: 200 },
-                //     (x, y) => ({ x: x % 20, y })
-                // ]}
-            })
+                onmove: this.dragMoveListener
+            });
     }
 
     private dragMoveListener(event) {

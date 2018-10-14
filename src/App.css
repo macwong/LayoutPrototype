@@ -1,11 +1,11 @@
 /* Menu */
-.layout_controls {
+.layout_menu {
     background-color: #1168b3;
     color: white;
     font-family: verdana;
     width: 250px;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
 }
