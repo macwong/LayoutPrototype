@@ -4,13 +4,28 @@
     font-family: verdana;
     width: 250px;
     height: 100vh;
-  }
-  
+}
+
   .layout_controls .layout_controls__trigger {
     padding: 10px;
     display: block;
     width: calc(100% - 20px);
     cursor: pointer;
+    border-bottom: solid 1px white;
+  }
+
+  .layout_controls .layout_controls__trigger:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    float: right;
+    display: block;
+    transform: rotate(0);
+    transition: 300ms linear;
+  } 
+
+  .layout_controls .layout_controls__trigger.is-open:after {
+    transform: rotate(-90deg);
+    transition: 300ms linear;
   }
   
   .layout_controls .layout_controls__contentInner {
@@ -21,4 +36,9 @@
   
   .layout_controls .layout_controls__contentInner div {
     padding: 5px;
+  }
+
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('./fonts/fa-solid-900.ttf');
   }
