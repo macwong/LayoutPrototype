@@ -12,7 +12,13 @@ class App extends React.Component {
                 <div>Image</div>
             </Collapsible>
             <div className="page_container">
-                <div className="page_A4">Test1</div>
+                <div className="page_A4">
+                    <div className="page_margin">
+                        <div className="report_header">Header</div>
+                        <div className="report_content">Content</div>
+                        <div className="report_footer">Footer</div>
+                    </div>
+                </div>
             </div>
         </div>
     );

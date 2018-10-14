@@ -54,6 +54,7 @@
     bottom: 0;
     padding: 20px;
   }
+
   .page_container .page_A4 {
     background: white;
     width: 21cm;
@@ -63,6 +64,29 @@
     margin-bottom: 0.5cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   }
+
+  .page_container .page_margin {
+      padding: 2cm;
+      height: calc(100% - 4cm);
+  }
+
+  .report_designer .page_container .report_header,
+  .report_designer .page_container .report_content,
+  .report_designer .page_container .report_footer {
+    border: solid 1px #1168b3;
+  }
+
+  .page_container .report_header {
+      height: 2cm;
+  }
+
+  .page_container .report_footer {
+    height: 2cm;
+  }
+
+    .page_container .report_content {
+        height: calc(100% - 4cm - 6px);
+    }
 
   @media print {
     .page_container, .page_A4 {
