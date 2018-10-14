@@ -6,7 +6,7 @@ class App extends React.Component {
   public render() {
     return (
         <div>
-            <Collapsible trigger="Controls">
+            <Collapsible trigger="Controls" classParentString="layout_controls">
                 <div>Text</div>
                 <div>Markdown</div>
                 <div>Image</div>

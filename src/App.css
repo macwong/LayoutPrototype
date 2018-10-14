@@ -1,4 +1,4 @@
-.Collapsible {
+.layout_controls {
     background-color: #1168b3;
     color: white;
     font-family: verdana;
@@ -6,19 +6,19 @@
     height: 100vh;
   }
   
-  .Collapsible .Collapsible__trigger {
+  .layout_controls .layout_controls__trigger {
     padding: 10px;
     display: block;
-    width: 100%;
+    width: calc(100% - 20px);
     cursor: pointer;
   }
   
-  .Collapsible .Collapsible__contentInner {
+  .layout_controls .layout_controls__contentInner {
     background-color: white;
     color: black;
     padding: 10px;
   }
   
-  .Collapsible .Collapsible__contentInner div {
+  .layout_controls .layout_controls__contentInner div {
     padding: 5px;
   }
