@@ -70,10 +70,17 @@
       height: calc(100% - 4cm);
   }
 
-  .report_designer .page_container .report_header,
-  .report_designer .page_container .report_content,
+  .page_wrapper {
+      height: 100%;
+      border: solid 1px #1168b3;
+  }
+
+  .report_designer .page_container .report_header {
+    border-bottom: solid 1px #1168b3;
+  }
+
   .report_designer .page_container .report_footer {
-    border: solid 1px #1168b3;
+    border-top: solid 1px #1168b3;
   }
 
   .page_container .report_header {

@@ -32,6 +32,7 @@ class App extends React.Component {
                     </Collapsible>
                     <Collapsible trigger="Random" classParentString="layout_controls" transitionTime={150}>
                         <div>Highlight on click</div>
+                        <div>Create from JSON data</div>
                         <div>Print</div>
                         <div>PDF</div>
                         <div>Word</div>
@@ -41,11 +42,13 @@ class App extends React.Component {
                 <div className="page_container">
                     <div className="page_A4">
                         <div className="page_margin">
-                            <div className="report_header">Header</div>
-                            <div className="report_content">
-                                <div className="layout_drag">Move me</div>
+                            <div className="page_wrapper">
+                                <div className="report_header">Header</div>
+                                <div className="report_content">
+                                    <div className="layout_drag">Move me</div>
+                                </div>
+                                <div className="report_footer">Footer</div>
                             </div>
-                            <div className="report_footer">Footer</div>
                         </div>
                     </div>
                 </div>
